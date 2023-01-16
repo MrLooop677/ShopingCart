@@ -1,7 +1,16 @@
-import React from "react";
+import { Container } from "react-bootstrap";
+import AppNav from "./components/AppNav";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
-  return <div>app</div>;
+  return (
+    <>
+      <AppNav />
+      <Container>
+        <Outlet />
+      </Container>
+    </>
+  );
 };
 
 export default App;
