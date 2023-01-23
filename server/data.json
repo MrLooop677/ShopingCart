@@ -549,9 +549,13 @@
         "https://i.dummyjson.com/data/products/30/3.jpg",
         "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
       ]
-    },
+    }
+  ],
+  "users": [
     {
-      "users": []
+      "email": "eslammahmoud@ali.com",
+      "password": "$2a$10$D9LuuMcXoZJbRB.auOqVHucWUb2C2cjMG4HIpbEYIMYG1mD3GFf6C",
+      "id": 222
     }
   ]
 }

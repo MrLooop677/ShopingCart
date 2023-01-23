@@ -4,6 +4,7 @@ import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { clearItemes, deteteItem } from "../state/productSlice";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cart } = useSelector((state) => state.cart);
@@ -21,6 +22,9 @@ const Cart = () => {
             Clear Cart
           </Button>
           <h2>Total Price :${totalPrice.toFixed(2)}</h2>
+          <Button variant="primary" as={Link} to="/checkout">
+            check Out
+          </Button>
           <Table
             striped
             bordered
